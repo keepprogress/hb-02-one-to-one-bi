@@ -25,11 +25,17 @@ public class CreateDemo {
 		try {
 					
 			// create the objects
-			Instructor tempInstructor =
+			/* Instructor tempInstructor =
 					new Instructor("Chad", "Darby", "darby@luv2code.com");
 			
 			InstructorDetail tempInstructorDetail = 
 					new InstructorDetail("http://www.luv2code.com/youtube", "Luv 2 code!!!");
+			*/
+			Instructor tempInstructor =
+					new Instructor("Madhu", "Patel", "madhu@luv2code.com");
+			
+			InstructorDetail tempInstructorDetail = 
+					new InstructorDetail("http://www.youtube.com", "Guitar");
 						
 			// associate the objects
 			tempInstructor.setInstructorDetail(tempInstructorDetail);
@@ -54,8 +60,5 @@ public class CreateDemo {
 		finally {
 			factory.close();
 		}
-		
-		
 	}
-
 }
