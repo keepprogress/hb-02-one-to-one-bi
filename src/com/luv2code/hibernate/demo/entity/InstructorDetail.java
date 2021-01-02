@@ -40,8 +40,9 @@ public class InstructorDetail {
 	
 	// add @OnetoOne annotation
 	
-	@OneToOne(mappedBy="instructorDetail", cascade= {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST,
-														CascadeType.REFRESH})
+	@OneToOne(mappedBy="instructorDetail", 
+			cascade= {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST,
+						CascadeType.REFRESH})
 	private Instructor instructor;
 	
 	
